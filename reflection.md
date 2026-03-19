@@ -8,6 +8,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+When I ran the game for the first time, the UI looked pretty generic, and a little buggy (styling inconsistencies, clipping, low saturation, etc.). There are two conrete bugs that I noticed:
+1 -  The final guess is outside of the range 1 to 100. It often goes below 0
+2 -   The hints were not showing when the checknox was selected
+3 -  The number of attempts left is not being updated properly
 ---
 
 ## 2. How did you use AI as a teammate?
