@@ -4,45 +4,26 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
-
-When I ran the game for the first time, the UI looked pretty generic, and a little buggy (styling inconsistencies, clipping, low saturation, etc.). There are two conrete bugs that I noticed:
-1 -  The final guess is outside of the range 1 to 100. It often goes below 0
-2 -   The hints were not showing when the checknox was selected
-3 -  The number of attempts left is not being updated properly
+When I first ran the game, the UI looked plain and had several visual glitches, like inconsistent styling and low color contrast. I noticed three main bugs: the final guess could go outside the allowed range (sometimes even below zero), the hints were not always showing when the checkbox was selected, and the number of attempts left was not updating correctly. These issues made the game confusing and hard to play.
 ---
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-  I used Co Pilot
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-  One suggestion was a code snippet that fixed the attempt rendering logic (so the proper number of remaining attemps is shown). I verified this by writing some pytest, and also running the game in my browser
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
-  One suggestion I have to copilot was to improve the UI in the current application. However, it generated a button that was not visible, because the z-index was wrong. 
-
+I used Copilot as my main AI tool for this project. One helpful suggestion was a code snippet that fixed the attempt rendering logic, which I verified by running pytest and testing the game in my browser. On the other hand, Copilot once suggested a UI improvement that added a button, but it was not visible due to a z-index issue, which I discovered by inspecting the page and checking the CSS.
 ---
 
 ## 3. Debugging and testing your fixes
 
-- How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
-- Did AI help you design or understand any tests? How?
+I decided a bug was fixed when the game behaved as expected and all related pytest cases passed. For example, I wrote a test to check that the hint logic was correct, and verified it by running pytest and seeing it pass. The AI helped me design these tests by suggesting what to check and how to structure the assertions.
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
-- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+Streamlit reruns the script from top to bottom on every user interaction, so you need to use session state to persist values like the secret number or score. Session state acts like a dictionary that keeps your variables safe between reruns. Without it, your game would reset every time you click a button.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+One habit I want to reuse is writing small, focused tests to confirm each bug is fixed. Next time, I would be more specific in my prompts to the AI to avoid UI issues. This project showed me that AI-generated code can be helpful, but it still needs careful review and testing to work well.

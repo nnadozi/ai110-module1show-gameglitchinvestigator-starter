@@ -26,13 +26,18 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+   The purpose of my game is to guess a number with a limited amount of attempts. You are able to alter the difficulty of the guessing game to make it harder.
 - [ ] Detail which bugs you found.
+   Bugs that I found included UI bugs, attempt-rendering bugs, and also guessing bugs (the final guess was outside the range of 1-100)
 - [ ] Explain what fixes you applied.
+   I applied many UI fixes in order to make the UX more appealing and easier to follow along with. I also fixed the attempt-rendering logic, and ensured that the final guess was inside of the 1-100 range.
 
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+![alt text](image.png)
 
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+![alt text](image-1.png)
