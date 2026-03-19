@@ -17,8 +17,11 @@ When I ran the game for the first time, the UI looked pretty generic, and a litt
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+  I used Co Pilot
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+  One suggestion was a code snippet that fixed the attempt rendering logic (so the proper number of remaining attemps is shown). I verified this by writing some pytest, and also running the game in my browser
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+  One suggestion I have to copilot was to improve the UI in the current application. However, it generated a button that was not visible, because the z-index was wrong. 
 
 ---
 
